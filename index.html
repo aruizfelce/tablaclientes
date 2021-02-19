@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>       
+    <style>
+        
+        .table-clientes{
+            border-top:solid 1px gray;
+            border-spacing: 0;
+        }
+
+        .table-clientes thead th{
+            background: #333;
+            color:white;
+        }    
+
+        .table-clientes th, 
+        .table-clientes td {
+            border-right: 1px solid gray;
+            min-width: 100px;
+            padding: 0.1rem;
+            text-align: left;
+        }
+
+        .table-clientes th:last-child, 
+        .table-clientes td:last-child {
+            border-right:0;
+        }
+
+        .table-clientes td{
+            border-bottom: 1px solid gray;
+        }
+
+        .table-container{
+            max-width: 100%;
+            overflow-x: scroll;
+			border-left: solid 1px gray;
+			border-right: solid 1px gray;
+        }
+		
+		.table-clientes .sticky{
+			position: sticky;
+			left: 0;
+			border-right: 1px solid gray;
+		}
+		
+		.table-clientes .sticky-2{
+			position: sticky;
+			left: 100px;
+		}
+		
+		.table-clientes .sticky-3{
+			position: sticky;
+			left: 200px;
+		}
+		
+		.table-clientes tbody tr{
+			
+		} 
+		
+		.table-clientes tbody tr .sticky {
+			background: #ccc;
+		} 
+		
+		.table-clientes tbody tr .sticky-2 {
+			background: #ccc;
+		} 
+		
+		.table-clientes tbody tr .sticky-3 {
+			background: #ccc;
+		} 
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="table-container">
+        <table class="table-clientes">
+            <thead>
+                <tr>
+                    <th class="sticky"></th>
+					<th class="sticky-2">Numero del Cliente</th>
+                    <th class="sticky-3">APODO</th>
+                    <th>NOMBRE Y APELLIDOS</th>
+                    <th>PECULIARIDADES</th>
+                    <th>ES CLIENTE</th>
+                    <th>OBS GENERALES</th>
+                    <th>ENCUESTA</th>
+                    <th>LPD</th>
+                    <th>TENGO FOTO</th>
+                    <th>TELEFONO</th>
+                    <th>CORREO</th>
+                    <th>NACIMIENTO</th>
+                    <th>AÑOS</th>
+                    <th>SEXO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+					<td class="sticky">
+						<button class="btn-floating red">
+							<i class="material-icons">delete</i> 
+						</button>
+						<button class="btn-floating blue">
+							<i class="material-icons">edit</i> 
+						</button>
+					</td>
+                    <td class="sticky-2">1</td>
+                    <td class="sticky-3">AGNOLA</td>
+                    <td>Agnola Pérez</td>
+                    <td>N</td>
+                    <td>SI</td>
+                    <td></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>NO</td>
+                    <td>123456</td>
+                    <td>correo@gmail.com</td>
+                    <td>10/03/1960</td>
+                    <td>61</td>
+                    <td>Mujer</td>
+                </tr>
+                <tr>
+                    <td class="sticky">
+						<button class="btn-floating red">
+							<i class="material-icons">delete</i> 
+						</button>
+						<button class="btn-floating blue">
+							<i class="material-icons">edit</i> 
+						</button>
+					</td>
+					<td class="sticky-2">2</td>
+                    <td class="sticky-3">AMELIA</td>
+                    <td>Amelia Pérez</td>
+                    <td></td>
+                    <td>NO</td>
+                    <td></td>
+                    <td>NO</td>
+                    <td>NO</td>
+                    <td>SI</td>
+                    <td>7891011</td>
+                    <td>correo2@gmail.com</td>
+                    <td>10/03/1966</td>
+                    <td>56</td>
+                    <td>Mujer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>    
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script> 
+</body>
+</html>
